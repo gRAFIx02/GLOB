@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+
+<h1 class="title">GLOB</h1>
+
+    <ul class="navbar">
+        <li>
+            <a href="/write">Write blog</a>
+        </li>
+        <li>
+            <a href="/read">Read blogs</a>
+        </li>
+    </ul>
+
+    <div class="main-body">
+        <h2 class="main-body-title"><%= title %></h2>
+        <p class="blog-content"><%= content %></p>
+    </div>
+</div>
+
+<%- include("footer.ejs") %>

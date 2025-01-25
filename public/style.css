@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main
+{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "PT Sans", serif;
+    font-weight: normal;
+    color: #4d0000;
+}
+
+a
+{
+    text-decoration: none;
+    color: #4d0000;
+}
+
+.title
+{
+    font-family: "Macondo", serif;
+    font-size: 4rem;
+    color: #990000;
+    padding: 1rem 1.25rem;
+}
+
+footer
+{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0.75rem 0;
+}
+
+.navbar
+{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+    height: 100%;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    row-gap: 15px;
+}
+
+.navbar li
+{
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar li:hover
+{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main-body
+{
+    border-left: 3px solid #990000;
+    width: 83%;
+    position: relative;
+    left: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 25px 20px;
+}
+
+.main-body-title
+{
+    font-size: 2.25rem;
+    font-family: "PT Sans", serif;
+}
+
+.blog-form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 90%;
+    height: 60vh;
+}
+
+.blog-form input
+{
+    border: 2px solid#990000;
+    border-radius: 3px;
+    background: none;
+    height: 30px;
+    padding: 5px 15px;
+    font-family: "PT Sans", serif;
+    font-size: 1.5rem;
+    color: #4d0000;
+}
+
+.blog-form textarea
+{
+    border: 2px solid#990000;
+    border-radius: 3px;
+    background: none;
+    padding: 5px 15px;
+    font-family: "PT Sans", serif;
+    font-size: 1rem;
+    color: #4d0000;
+}
+
+.blog-form button
+{
+    align-self: flex-end;
+    border: none;
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    background-color: #4d0000;
+    font-family: "PT Sans", serif;
+    font-size: 1rem;
+    color: aliceblue;
+    transition: all 0.3s;
+}
+
+.blog-form button:hover
+{
+    transform: scale(1.1);
+    font-style: bold;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.blog-list
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.blog-list li
+{
+    border: 3px #4d0000 solid;
+    border-radius: 5px;
+    width: 90%;
+    height: 30px;
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.blog-list li:hover
+{
+    transform: scale(1.01);
+}
+
+.blog-content
+{
+    font-family: "PT Sans", serif;
+    font-size: 1rem;
+    color: #4d0000;
+    text-align: justify;
+    width: 95%;
+}

@@ -1,0 +1,30 @@
+<%- include("header.ejs") %>
+
+<h1 class="title">GLOB</h1>
+
+    <ul class="navbar">
+        <li>
+            <a href="/write">Write blog</a>
+        </li>
+        <li>
+            <a href="/read">Read blogs</a>
+        </li>
+    </ul>
+
+    <div class="main-body">
+        <h2 class="main-body-title">Read a blog</h2>
+        <% if(locals.blog !== null) { %>
+            <ul class="blog-list">
+                <% Object.keys(locals.blog).forEach(title => { %>
+                        <li>
+                            <h3>
+                                <a href="/read/view_blog?title=<%= encodeURIComponent(title) %>"><%= title %></a>
+                            </h3>
+                        </li>    
+                <% }) %>
+            </ul>
+        <% } %>
+    </div>
+</div>
+
+<%- include("footer.ejs") %>
